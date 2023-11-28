@@ -26,8 +26,16 @@ sudo apt install mpv -yy
 sudo apt install zathura -yy
 sudo apt install picom -yy
 sudo apt install feh -yy
+sudo apt install harfbuzz -yy
 
 git clone https://github.com/perrob70/DebianAwesome
-mv /home/perrob/DebianAwesome/.config/awesome ~/.config/awesome
-mv /home/perrob/DebianAwesome/.config/lf ~/.config/lf
-mv /home/perrob/DebianAwesome/.config/suckless ~/.config/suckless
+mv /home/perrob/DebianAwesome/.config/awesome /home/perrob/.config/awesome
+mv /home/perrob/DebianAwesome/.config/lf /home/perrob/.config/lf
+mv /home/perrob/DebianAwesome/.config/suckless /home/perrob/.config/suckless
+
+cd ..config/suckless/dmenu
+sudo make clean install
+
+cd ..
+cd st
+sudo make clean install
