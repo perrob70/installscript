@@ -30,9 +30,9 @@ sudo apt install libharfbuzz-dev -yy
 
 
 git clone https://github.com/perrob70/DebianAwesome
-sudo mv /home/perrob/DebianAwesome/.config/awesome /home/perrob/.config/
-sudo mv /home/perrob/DebianAwesome/.config/lf /home/perrob/.config/
-sudo mv /home/perrob/DebianAwesome/.config/suckless /home/perrob/.config/
+sudo mv /home/perrob/installscript/DebianAwesome/.config/awesome /home/perrob/.config/
+sudo mv /home/perrob/installscript/DebianAwesome/.config/lf /home/perrob/.config/
+sudo mv /home/perrob/installscript/DebianAwesome/.config/suckless /home/perrob/.config/
 
 cd .config/suckless/dmenu
 sudo make clean install
