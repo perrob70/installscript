@@ -28,18 +28,18 @@ sudo apt install picom -yy
 sudo apt install feh -yy
 sudo apt install libharfbuzz-dev -yy
 
-sudo mv installscript/DebianAwesome/.profile perrob/.profile
-sudo mv installscript/DebianAwesome/.xinitrc perrob/.xinitrc
+mv "$HOME"/installscript/DebianAwesome/.profile "$HOME"/
+mv "$HOME"/installscript/DebianAwesome/.xinitrc "$HOME"/
 
 git clone https://github.com/perrob70/DebianAwesome
 
-sudo cd ..
-sudo mkdir .config
-sudo mv installscript/DebianAwesome/.config/awesome .config/
-sudo mv installscript/DebianAwesome/.config/lf .config/
-sudo mv installscript/DebianAwesome/.config/suckless .config/
+cd ..
+mkdir .config
+mv "$HOME"/installscript/DebianAwesome/.config/awesome "$HOME"/.config
+mv "$HOME"/installscript/DebianAwesome/.config/lf "$HOME"/.config
+mv "$HOME"/installscript/DebianAwesome/.config/suckless "$HOME"/.config
 
-cd .config/suckless/dmenu
+cd "$HOME"/.config/suckless/dmenu
 make && sudo make install
 
 cd ../st
